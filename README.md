@@ -138,3 +138,61 @@ smart-hospital-disease-prediction/
 10. Flask Web Application
         ↓
 11. Disease Prediction
+
+
+## 📊 Model Evaluation
+
+The trained machine learning models are evaluated using suitable classification metrics such as:
+
+- Accuracy
+- Precision
+- Recall
+- F1-Score
+- Confusion Matrix
+- ROC-AUC (where applicable)
+
+These metrics are used to measure the performance of the disease prediction models.
+
+## 🎯 Prediction Output
+
+The system provides:
+
+- Predicted disease result
+- Prediction probability
+- Patient information
+- Prediction history
+- Stored prediction records
+
+## 🗄️ Database
+
+The application uses SQLite to store hospital and prediction-related information.
+
+Database functionality includes:
+
+- Patient records
+- Disease predictions
+- Prediction results
+- Prediction history
+
+## 🌐 Flask Web Application
+
+The Flask application connects the machine learning models with the web interface.
+
+The general flow is:
+
+```text
+User Input
+    ↓
+Flask Application
+    ↓
+Data Preprocessing
+    ↓
+Trained ML Model
+    ↓
+Prediction
+    ↓
+Prediction Probability
+    ↓
+Database Storage
+    ↓
+Result Display
