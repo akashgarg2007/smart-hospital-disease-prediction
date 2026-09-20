@@ -1,0 +1,344 @@
+/* =========================
+   GOOGLE FONT
+========================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+
+
+/* =========================
+   BODY
+========================= */
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:linear-gradient(
+        135deg,
+        #eef7ff,
+        #ffffff
+    );
+
+    min-height:100vh;
+
+}
+
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.custom-navbar{
+
+    background:linear-gradient(
+        90deg,
+        #0066ff,
+        #00b4d8
+    );
+
+    padding:15px;
+
+    box-shadow:
+    0 5px 20px rgba(0,0,0,0.15);
+
+}
+
+
+
+/* =========================
+   CARD
+========================= */
+
+.card{
+
+    border-radius:25px;
+
+    transition:0.3s;
+
+}
+
+
+.card:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:
+    0 20px 40px rgba(0,0,0,0.15);
+
+}
+
+
+
+/* =========================
+   TEXT
+========================= */
+
+h1{
+
+    font-weight:800;
+
+}
+
+
+h2,h3{
+
+    font-weight:700;
+
+}
+
+
+
+label{
+
+    font-weight:600;
+
+}
+
+
+
+/* =========================
+   INPUT
+========================= */
+
+.form-control,
+.form-select{
+
+    height:55px;
+
+    border-radius:15px;
+
+    border:1px solid #d9e7ff;
+
+    font-size:16px;
+
+}
+
+
+.form-control:focus,
+.form-select:focus{
+
+    border-color:#0066ff;
+
+    box-shadow:
+    0 0 12px rgba(0,102,255,0.25);
+
+}
+
+
+
+/* =========================
+   BUTTON
+========================= */
+
+.btn-primary{
+
+    background:linear-gradient(
+        90deg,
+        #0066ff,
+        #00b4d8
+    );
+
+    border:none;
+
+    font-weight:700;
+
+}
+
+
+.btn-primary:hover{
+
+    transform:scale(1.03);
+
+}
+
+
+
+/* =========================
+   TOP IMAGES
+========================= */
+
+.image-container{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+}
+
+
+
+.diabetes-image{
+
+    width:180px;
+
+    height:180px;
+
+    object-fit:contain;
+
+    background:white;
+
+    padding:15px;
+
+    border-radius:30px;
+
+    box-shadow:
+    0 15px 35px rgba(0,0,0,0.15);
+
+}
+
+
+
+.doctor-image{
+
+    width:280px;
+
+    height:320px;
+
+    object-fit:contain;
+
+    background:white;
+
+    padding:10px;
+
+    border-radius:30px;
+
+    box-shadow:
+    0 20px 40px rgba(0,0,0,0.20);
+
+}
+
+
+
+/* =========================
+   PATIENT / HOSPITAL IMAGES
+========================= */
+
+.health-image{
+
+    width:100%;
+
+    height:250px;
+
+    object-fit:cover;
+
+    border-radius:25px;
+
+    box-shadow:
+    0 15px 35px rgba(0,0,0,0.15);
+
+}
+
+
+
+/* =========================
+   RESULT
+========================= */
+
+.alert{
+
+    border-radius:20px;
+
+}
+
+
+.alert-light{
+
+    border-left:5px solid #0066ff;
+
+}
+
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+
+    font-weight:600;
+
+    letter-spacing:0.5px;
+
+}
+
+
+
+/* =========================
+   ANIMATION
+========================= */
+
+.doctor-image,
+.diabetes-image{
+
+    animation:float 3s infinite ease-in-out;
+
+}
+
+
+@keyframes float{
+
+    0%{
+
+        transform:translateY(0px);
+
+    }
+
+
+    50%{
+
+        transform:translateY(-12px);
+
+    }
+
+
+    100%{
+
+        transform:translateY(0px);
+
+    }
+
+}
+
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:768px){
+
+
+    h1{
+
+        font-size:32px;
+
+    }
+
+
+    .doctor-image{
+
+        width:220px;
+
+        height:260px;
+
+    }
+
+
+    .diabetes-image{
+
+        width:150px;
+
+        height:150px;
+
+    }
+
+
+}
